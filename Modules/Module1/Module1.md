@@ -201,7 +201,7 @@ What is the difference between Git and GitHub?
 
 What is the difference between a git commit and a git push?
 
- - Answer:
+ - Answer: Commit is when a file is save and comit is when it started 
 
 What is the difference between a pull, and an upstream pull?
 
