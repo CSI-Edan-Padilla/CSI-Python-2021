@@ -197,19 +197,19 @@ You may update both simultaneously from Visual Studio by selecting.
 
 What is the difference between Git and GitHub?
 
- - Answer:
+ - Answer: The differnece is that github is were you safe the document or file and git is the changes that you did after putting it in github.
 
 What is the difference between a git commit and a git push?
 
- - Answer: Commit is when a file is save and comit is when it started 
+ - Answer: Commit is when a file is save and comit is when you are  dowloding were you save the file.
 
 What is the difference between a pull, and an upstream pull?
 
- - Answer:
+ - Answer: The difference is that pull is the change that you did in a file and the upstreams is the update that you did in the file without changing the file.
 
 What part of these instructions was unclear or incomplete?
 
- - Answer:
+ - Answer: How the fork works.
 
 Type down any class notes below this sentence:
 
