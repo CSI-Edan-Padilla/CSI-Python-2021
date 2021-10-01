@@ -71,13 +71,17 @@ print(f"Computer selected: {computerChoice}")
 Give a python example for each logic operator in the module image.
 
  - Answers:
-   - OR:
-   - AND: 
-   - NOT: 
+   - OR: if(x < = 94 or x < 7):
+   This is true because the first one is true and the the other one is false and the rule says that is if one is true and the other is false at the will be true
+   - AND: if( x < = 75 or x < 13 ):
+   This false because in the first one is true and the other one is false and the rule says that is if one is true and the other is false is false at the end will be false
+   - NOT: if( x < = 56 not x < 30)
+   
+   
 
 
 Type down any class notes below this sentence:
-
+It was fun to make the Rock, paper and scissors game
 
 
 Lackluster responses may result in point deductions.
