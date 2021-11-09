@@ -11,6 +11,7 @@
 <!-- ## [Select a projectile weapon](https://www.giantbomb.com/profile/phatcat/lists/modern-military-weapons/27505/) -->
 ## [Select a projectile weapon.](https://escapefromtarkov.fandom.com/wiki/Weapons)`(5pts)`
 * Store its name as a variable.
+\
 * Find the cartridge calibre for the weapon you selected. eg. 5.56 for an M4.
   * Store its name as a variable.
 * Select a round from the ammunition types.
