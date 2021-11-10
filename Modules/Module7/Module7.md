@@ -70,23 +70,25 @@ print('Loop ended.')
 
 What is an Iterator?
 
- - Answer:
+ - Answer: The repetition of a sequence of computer intructions a specifed number of times or until a condition is met
 
 Why are iterators important im programming?
 
- - Answer:
+ - Answer: The primary purpose of an iterator is to allow a user to process every element of a container while isolating the user from the internal structure of the container. This allows the container to store elements in any manner it wishes while allowing the user to treat it as if it were a simple sequence or list.
 
 What is the purpose of a for-loop.
 
- - Answer:
+ - Answer: is used to repeat a specific block of code a known number of times. For example, if we want to check the grade of every student in the class, we loop from 1 to that number. When the number of times is not known before hand, we use a "While" loop.
 
 Describe how the modulus operand allows us to determine when a number is odd. Provide a mathematical example.
 
- - Answer: 
+ - Answer: returning the result of the problem and the moduls operand returns the whole number remainder
 
 How do you create an infinite loop in python?
 
- - Answer:
+ - Answer: 
+  while True:
+      print("hello world")
 
 Type down any class notes below this sentence:
 

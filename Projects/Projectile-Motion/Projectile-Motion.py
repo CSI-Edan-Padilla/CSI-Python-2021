@@ -29,7 +29,7 @@ MyDataSet = [
 MyOutputPath = Path(__file__).parents[0]
 MyOutputFilePath = os.path(MyOutputPath,"Projectile-Motion.json")
 with open(MyOutputFilePath,"w") as outfile:
-    json.dump([Data.__dict__ for data in MyDataSet],outfile)
+    json.dump([data.__dict__ for data in MyDataSet],outfile)
 
 deserialize = open(MyOutputFilePath)
 ProjectileMotionjson = json.load(deserialize)
