@@ -90,7 +90,7 @@ How do you create an infinite loop in python?
   while True:
       print("hello world")
 
-Type down any class notes below this sentence:
+Type down any class notes below this sentence: 
 
 
 

@@ -23,11 +23,11 @@ MyDataSet = [
     ExperimentData(f"MP9 9x19","9x19mm Parabellum","9x19mm Pst gzh", 457,"Central Park", 472,"Saturn"),
     ExperimentData(f"P90 5.7x28","5.7x28mm FN","5.7x28mm SS190",716, "Chrysler Building", 319, "Jupiter"),
     ExperimentData(f"UMP .45 ACP","45 ACP","45 ACP Match FMJ",285,"One World Trade Center",541,"Mars" ),
-    ExperimentData(f"STM-9 Gen.2 9x19","9x19mm Parabellum","9x19mm Pst gzh", 457,"Woolworth Building", 241, "Earth"), 
+    ExperimentData(f"STM-9 Gen.2 9x19","9x19mm Parabellum","9x19mm Pst gzh", 457,"Woolworth Building", 241, "Earth")
 ]
 
 MyOutputPath = Path(__file__).parents[0]
-MyOutputFilePath = os.path(MyOutputPath,"Projectile-Motion.json")
+MyOutputFilePath = os.path.join(MyOutputPath,"Projectile-Motion.json")
 with open(MyOutputFilePath,"w") as outfile:
     json.dump([data.__dict__ for data in MyDataSet],outfile)
 
