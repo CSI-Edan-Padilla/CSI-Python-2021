@@ -151,11 +151,12 @@ def getInput():
             continue 
 
         if letter in wrong_symbols:
-            print("Wrogn, you are bad 👎🏽")
+            print("Wrong, you are bad 👎🏽")
             continue 
 
         if letter in wrong_symbols:
-            print("Again, why are you so bad?😐")
+            print("Again, why are you bad?😐")
             continue 
-
+        
+        return letter 
 
