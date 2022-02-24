@@ -141,11 +141,11 @@ print(steps[0])
 
 wrong_numbers = ["0","1","2","3","4","5","6","7","8","9"]
 wrong_symbols = ["`","~","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","}","[","]","\\","|",":",";","'","<",">",",",".","?","/"]
-letter = 1 
+attemptedletters = []
 
 def getInput():
     while(True):
-        letter =  input( "Try to find the word to win the game of Hangman by finding the letters" )
+        letter =  input( "Try to find the word to win the game of Hangman by finding the letters: " )
 
         if (len,(letter) !=1):
             continue 
@@ -157,6 +157,33 @@ def getInput():
         if letter in wrong_symbols:
             print("Again, why are you bad?😐")
             continue 
-        
-        return letter 
+
+        if letter in attemptedletters:
+            print("Bad 💩")
+            continue 
+
+        attemptedletters.append(letter)
+        return letter
+
+
+def printword():
+    temp:str=""
+    for letter in Name:
+        if letter in Name:
+            print(letter)
+            letter in attemptedletters
+    if letter not in attemptedletters:
+        temp +="_"
+    else:
+        temp += letter
+    return temp
+
+
+while True:
+    print(steps[0])
+    getInput()
+    print()
+    
+
+
 
