@@ -1,4 +1,5 @@
 
+from cgitb import reset
 import json, ssl
 
 import random
@@ -22,8 +23,7 @@ def getWord():
     return current_name.name.upper()
 
    
-myWord = getWord()
-print(myWord)
+
 
 steps = ["""
         __________________
@@ -149,9 +149,8 @@ steps = ["""
 # print(steps[0])
 
 wrong_numbers = ["0","1","2","3","4","5","6","7","8","9"]
-wrong_symbols = ["`","~","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","}","[","]","\\","|",":",";","'","<",">",",",".","?","/",""] 
+wrong_symbols = ["`","~","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","}","[","]","\\","|",":",";","'","<",">",",",".","?","/"] 
 
-attemptedletters = []
 
 def getInput():
     while(True):
@@ -164,9 +163,9 @@ def getInput():
             print("Wrong, you are bad 👎🏽")
             continue 
 
-        # if letter in wrong_symbols:
-        #     print("Again, why are you bad?😐")
-        #     continue 
+        if letter in wrong_symbols:
+            print("Again, why are you bad?😐")
+            continue 
 
         if letter in attemptedletters:
             print("Bad 💩")
@@ -183,6 +182,7 @@ def printword():
              temp += letter
         else:
             temp +="_"
+            #phases = phases + 1
     return temp
 
 def printsteps():
@@ -191,15 +191,34 @@ def printsteps():
         if letter not in myWord:
             phases = phases +1
     print(steps[phases])
-
+    return phases
+    
+    
 
 while True:
-    printsteps()
-    print(printword())
-    getInput()
+    myWord = getWord()
+    print(myWord)
+    attemptedletters = []
+    
+    while True:
+        phases = printsteps()
+        temp = printword()
+        print(temp)
+
+        if myWord == temp:
+            print("Game won")
+            break
+
+        getInput()
+
+        if phases >= 7:
+            print("Game lost")
+            break
   
-
-
+    # while True:
+    #     myWord = getWord()
+    #     used = []
+  
     
 
 
